@@ -1,10 +1,12 @@
 const express = require("express");
 const csv = require("csv-parser");
+var cors = require("cors");
 const bodyParser = require("body-parser");
 const fs = require("fs");
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 const port = 3000;
 const months = {
   Jan: "01",
@@ -24,7 +26,7 @@ const months = {
 app.get("/fetch-csv", (req, res) => {
   const month = req.query.month;
   const year = req.query.year;
-  const filePath = "./data/Asurint-SOW-wise-Milestones.csv"; // Update this to point to your CSV file
+  const filePath = "./data/Asurint SOW wise Milestones.csv"; // Update this to point to your CSV file
   const fileStream = fs.createReadStream(filePath);
 
   var lines = [];
@@ -58,29 +60,29 @@ app.get("/fetch-csv", (req, res) => {
             }
             if (month === month1 && year === year1) {
               ans.push(e);
+            }
+          } else {
+            const dates = dates1.toString().split("/");
+            //console.log(dates);
+            var month1;
+            var year1;
+            if (dates[1] && isNaN(dates[1])) {
+              const sd = dates[1];
+              month1 = months[sd];
+              year1 =
+                dates[2]?.length > 2 ? dates[2] : !dates[2] ? " " : dates[2];
             } else {
-              const dates = dates1.toString().split("/");
-              //console.log(dates);
-              var month1;
-              var year1;
-              if (dates[1] && isNaN(dates[1])) {
-                const sd = dates[1];
-                month1 = months[sd];
-                year1 =
-                  dates[2]?.length > 2 ? dates[2] : !dates[2] ? " " : dates[2];
-              } else {
-                month1 =
-                  dates[0]?.length === 1
-                    ? `0${dates[0]}`
-                    : !dates[0]
-                    ? " "
-                    : dates[0];
-                year1 =
-                  dates[2]?.length > 2 ? dates[2] : !dates[2] ? " " : dates[2];
-              }
-              if (month === month1 && year === year1) {
-                ans.push(e);
-              }
+              month1 =
+                dates[0]?.length === 1
+                  ? `0${dates[0]}`
+                  : !dates[0]
+                  ? " "
+                  : dates[0];
+              year1 =
+                dates[2]?.length > 2 ? dates[2] : !dates[2] ? " " : dates[2];
+            }
+            if (month === month1 && year === year1) {
+              ans.push(e);
             }
           }
         });
