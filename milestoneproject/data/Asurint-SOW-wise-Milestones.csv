@@ -1,0 +1,54 @@
+﻿SOW,Customer,Status,Milestones,Due Date
+1,Asurint,Complete,Project Kickoff,11-30-22
+1,Asurint,Complete,"Design, Development of Microservices for Tenant Screening, Eviction Data processing and integration with TransUnion",31-Dec-22
+1,Asurint,Complete,UAT Sign-off,31-Jan-23
+1,Asurint,Complete,MVP Go-Live ,6-Feb-23
+2,Asurint,Complete,Project Kickoff,30-Nov-22
+2,Asurint,Complete,Technical Architect Assessment Report completion,31-Dec-22
+3,Asurint,Complete,Environment Assessment and Protocols,01-23-23
+3,Asurint,Complete,"Design, Development of Third-party integration for Tenant Screening",02-10-23
+3,Asurint,In Progress,"Design, Development of criminal search solution for Tenant Screening",03-15-23
+3,Asurint,In Progress,UAT Sign-off,02-28-23
+3,Asurint,In Progress,Go-Live ,02-28-23
+4,Asurint,On Hold,Project Kickoff,01-09-23
+4,Asurint,On Hold,User Stories for document parsing automation,01-25-23
+4,Asurint,On Hold,Design capabilities for systematically tagging subjects within provided documents,02-17-23
+4,Asurint,On Hold,Develop document parsing application (Partial),03-31-23
+5,Asurint,Complete,Project Kickoff,01-25-23
+5,Asurint,In Progress,Setup API Gateway with Oauth2.0 authentication framework,02-25-23
+5,Asurint,Not Started,Integration strategy document for enabling data sharing among microservices and reporting systems,04-25-23
+5,Asurint,Not Started,Migrate ATS from classic to API gateway,06-25-23
+5,Asurint,Not Started,UAT Sign-off,07-25-23
+5,Asurint,Not Started,Go-Live ,08-15-23
+7,Asurint,Not Started,Discovery Phase,03-10-23
+7,Asurint,Not Started,Execution Phase,03-31-23
+3.9,Asurint,Started,Project Kickoff,02-13-23
+3.9,Asurint,Not Started,OTTO Assessment,03-10-23
+3.9,Asurint,Not Started,OTTO Assessment Completion,03-28-23
+3.9,Asurint,Not Started,Monthly Fee,04-27-23
+3.9,Asurint,Not Started,Monthly Fee,05-26-23
+3.9,Asurint,Not Started,Monthly Fee,06-28-23
+3.9,Asurint,Not Started,Monthly Fee,07-27-23
+3.9,Asurint,Not Started,Monthly Fee,08-28-23
+3.9,Asurint,Not Started,Monthly Fee,09-27-23
+3.9,Asurint,Not Started,Monthly Fee,10-26-23
+3.9,Asurint,Not Started,Monthly Fee,11-27-23
+3.9,Asurint,Not Started,Monthly Fee,12-27-23
+7,Asurint,Started,Project Kickoff,02-13-23
+7,Asurint,Not Started,Tista Phase 1 - Assessment Completion,03-10-23
+7,Asurint,Not Started,Tista Phase 1 Solution ,03-28-23
+6,Asurint,Not Started,DevOps Support Feb 23,02-28-23
+6,Asurint,Not Started,DevOps Support Mar 23,03-28-23
+6,Asurint,Not Started,DevOps Support Apr 23,04-27-23
+6,Asurint,Not Started,DevOps Support May 23,05-26-23
+6,Asurint,Not Started,DevOps Support Jun 23,06-28-23
+6,Asurint,Not Started,DevOps Support Jul 23,07-27-23
+6,Asurint,Not Started,DevOps Support Aug 23,08-28-23
+6,Asurint,Not Started,DevOps Support Sep 23,09-27-23
+6,Asurint,Not Started,DevOps Support Oct 23,10-26-23
+6,Asurint,Not Started,DevOps Support Nov 23,11-27-23
+6,Asurint,Not Started,DevOps Support Dec 23,12-27-23
+,,,,
+,,,,
+,,,,
+,,,,
